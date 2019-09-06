@@ -11,11 +11,13 @@
   "directories": {
     "lib": "lib",
     "bin": "bin",
+    "config": "config",
     "test": "__tests__"
   },
   "files": [
     "lib",
-    "bin"
+    "bin",
+    "config"
   ],
   "scripts": {
     "lint": "eslint src/*.js bin/* --fix",
