@@ -58,5 +58,9 @@
   "engines": {
     "node": ">= 8.0.0",
     "npm": ">= 5.0.0"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "18a9027b234277179688392359403375eabe9919"
 }
