@@ -1,0 +1,1 @@
+exports.exitProcess=!0,exports.exit=function(a){if(exports.exitProcess)process.exit(a);else if(0<a)throw new Error(`Process exited with code ${a}`)};

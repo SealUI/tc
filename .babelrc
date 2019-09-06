@@ -1,0 +1,37 @@
+{
+  "extends": "babel",
+  "presets": [
+    ["@babel/preset-env", {
+      "modules": false,
+      "targets": {
+        "chrome": "59",
+        "node": "8.2.1"
+      }
+    }]
+  ],
+  "plugins": ["@babel/plugin-transform-runtime","@babel/plugin-proposal-class-properties"],
+  "env": {
+    "tc": {
+      "presets": [
+        ["@babel/preset-env",{
+          "loose": false,
+          "modules": "false",
+          "targets": {
+            "chrome": "59",
+            "node": "8.2.1"
+          }
+        }],
+        ["minify",{
+          "keepFnName": true,
+          "mangle": {
+            "keepFnName": true
+          },
+          "deadcode": {
+            "keepFnName": true
+          }
+        }]
+      ],
+      "plugins": ["@babel/plugin-transform-runtime","@babel/plugin-proposal-class-properties"]
+    }
+  }
+}

@@ -1,0 +1,3 @@
+const fs=require("fs-extra"),path=require("path");function deleteRemovedFiles(a,b,c){// get all files that are not in the new filesystem and are still existing
+const d=Object.keys(c).filter(a=>!b[a]);// delete each of these files
+return Promise.all(d.map(b=>fs.unlink(path.join(a,b))))}module.exports=async function(a,b,c){process.env.VUE_CLI_SKIP_WRITE||(c&&(await deleteRemovedFiles(a,b,c)),Object.keys(b).forEach(c=>{const d=path.join(a,c);fs.ensureDirSync(path.dirname(d)),fs.writeFileSync(d,b[c])}))};

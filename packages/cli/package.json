@@ -1,0 +1,62 @@
+{
+  "name": "@tccr/cli",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "听着情歌流泪 <develop@lingtal.com>",
+  "license": "MIT",
+  "main": "bin/tc.js",
+  "bin": {
+    "tc": "bin/tc.js"
+  },
+  "directories": {
+    "lib": "lib",
+    "bin": "bin",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib",
+    "bin"
+  ],
+  "scripts": {
+    "lint": "eslint src/*.js bin/* --fix",
+    "build": "cross-env BABEL_ENV=tc babel src --out-dir lib"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/plugin-transform-runtime": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/runtime": "^7.5.5",
+    "babel-preset-minify": "^0.5.1",
+    "chalk": "^2.4.2",
+    "commander": "^3.0.1",
+    "copy-webpack-plugin": "^5.0.4",
+    "cross-env": "^5.2.1",
+    "del": "^5.1.0",
+    "didyoumean": "^1.2.1",
+    "envinfo": "^7.3.1",
+    "execa": "^2.0.4",
+    "fs-extra": "^8.1.0",
+    "inquirer": "^7.0.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "minimist": "^1.2.0",
+    "mp-webpack-plugin": "^0.0.21",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "ora": "^3.4.0",
+    "progress-bar-webpack-plugin": "^1.12.1",
+    "semver": "^6.3.0",
+    "string.prototype.padstart": "^3.0.0",
+    "terser-webpack-plugin": "^2.0.0",
+    "uppercamelcase": "^3.0.0",
+    "vue-loader": "^15.7.1",
+    "vue-template-compiler": "^2.6.10",
+    "webpack": "^4.39.3",
+    "webpack-cli": "^3.3.7",
+    "webpack-merge": "^4.2.2"
+  },
+  "engines": {
+    "node": ">= 8.0.0",
+    "npm": ">= 5.0.0"
+  }
+}
