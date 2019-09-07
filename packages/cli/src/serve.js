@@ -2,7 +2,8 @@ process.on('exit', () => {
   console.log()
 })
 
-// process.env.NODE_ENV = 'development'
+process.env.NODE_ENV = 'development'
+
 const fs = require('fs-extra')
 const webpack = require('webpack')
 const merge = require('webpack-merge')
