@@ -64,10 +64,11 @@ program
   .command('serve')
   .description('启动开发环境')
   .allowUnknownOption()
-  .action(cmd => {
+  .action(() => {
     require('../lib/serve')()
   })
 
+// 启动生产环境
 program
   .command('build')
   .description('启动开发环境')

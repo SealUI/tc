@@ -2,6 +2,10 @@
   "name": "tc",
   "private": true,
   "useWorkspaces": true,
+  "scripts": {
+    "release": "node ./release.js",
+    "changelog": "lerna-changelog"
+  },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",
@@ -12,7 +16,10 @@
     "babel-eslint": "^10.0.3",
     "babel-loader": "^8.0.6",
     "babel-preset-minify": "^0.5.1",
+    "chalk": "^2.4.2",
+    "commitlint-config-cz": "^0.12.1",
     "cross-env": "^5.2.1",
+    "cz-customizable": "^6.2.0",
     "del": "^5.1.0",
     "eslint": "^6.3.0",
     "eslint-config-prettier": "^6.2.0",
@@ -21,10 +28,14 @@
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-prettier": "^3.1.0",
     "eslint-plugin-promise": "^4.2.1",
+    "execa": "^2.0.4",
     "husky": "^3.0.5",
+    "inquirer": "^7.0.0",
     "lerna": "^3.16.4",
+    "lerna-changelog": "^0.8.2",
     "lint-staged": "^9.2.5",
     "prettier": "^1.18.2",
+    "semver": "^6.3.0",
     "terser-webpack-plugin": "^1.4.1",
     "webpack": "^4.39.3",
     "webpack-cli": "^3.3.7"
@@ -39,6 +50,14 @@
       "eslint --fix",
       "git add"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "./.cz-config.js"
+    }
   },
   "license": "MIT"
 }

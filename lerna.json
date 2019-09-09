@@ -17,10 +17,10 @@
   "version": "independent",
   "conventionalCommits": true,
   "changelog": {
-    "repo": "sealui/seal",
+    "repo": "sealui/tc",
     "labels": {
-      "feature": "New Feature",
-      "bug": "Bug Fix",
+      "feat": "New Feature",
+      "fix": "Bug Fix",
       "tag: new feature": ":rocket: New Feature",
       "tag: breaking change": ":boom: Breaking Change",
       "tag: bug fix": ":bug: Bug Fix",
