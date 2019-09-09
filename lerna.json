@@ -19,15 +19,12 @@
   "changelog": {
     "repo": "sealui/tc",
     "labels": {
-      "feat": "New Feature",
-      "fix": "Bug Fix",
-      "tag: new feature": ":rocket: New Feature",
-      "tag: breaking change": ":boom: Breaking Change",
-      "tag: bug fix": ":bug: Bug Fix",
-      "tag: enhancement": ":nail_care: Enhancement",
-      "tag: documentation": ":memo: Documentation",
-      "tag: internal": ":house: Internal",
-      "tag: underlying tools": ":hammer: Underlying Tools"
+      "PR: New Feature": ":rocket: New Features",
+      "PR: Breaking Change": ":boom: Breaking Changes",
+      "PR: Bug Fix": ":bug: Bug Fix",
+      "PR: Documentation": ":memo: Documentation",
+      "PR: Internal": ":house: Internal",
+      "PR: Underlying Tools": ":hammer: Underlying Tools"
     },
     "cacheDir": ".changelog"
   }
