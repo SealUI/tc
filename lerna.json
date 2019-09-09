@@ -3,7 +3,7 @@
   "useWorkspaces": true,
   "command": {
     "publish": {
-      "ignoreChanges": ["__tests__/**", ".npmignore", "src/**", "yarn.lock"]
+      "ignoreChanges": ["__tests__/**", ".npmignore", "src/**", "yarn.lock", "package-lock.json"]
     },
     "version": {
       "exact": true,
