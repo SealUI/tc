@@ -7,16 +7,6 @@
     "changelog": "lerna-changelog"
   },
   "devDependencies": {
-    "@babel/cli": "^7.5.5",
-    "@babel/core": "^7.5.5",
-    "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/plugin-transform-runtime": "^7.5.5",
-    "@babel/preset-env": "^7.5.5",
-    "@babel/runtime": "^7.5.5",
-    "@commitlint/cli": "^8.1.0",
-    "babel-eslint": "^10.0.3",
-    "babel-loader": "^8.0.6",
-    "babel-preset-minify": "^0.5.1",
     "chalk": "^2.4.2",
     "commitlint-config-cz": "^0.12.1",
     "cross-env": "^5.2.1",
@@ -36,10 +26,7 @@
     "lerna-changelog": "^0.8.2",
     "lint-staged": "^9.2.5",
     "prettier": "^1.18.2",
-    "semver": "^6.3.0",
-    "terser-webpack-plugin": "^1.4.1",
-    "webpack": "^4.39.3",
-    "webpack-cli": "^3.3.7"
+    "semver": "^6.3.0"
   },
   "husky": {
     "hooks": {
@@ -54,6 +41,7 @@
   },
   "config": {
     "commitizen": {
+      "\\path": "./node_modules/cz-lerna-changelog",
       "path": "./node_modules/cz-customizable"
     },
     "cz-customizable": {
