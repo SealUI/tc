@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.7](https://github.com/SealUI/tc/compare/@tccr/cli@0.0.6...@tccr/cli@0.0.7) (2019-09-09)
+
+
+### Bug Fixes
+
+* 修改重复编译的问题 ([7c70661](https://github.com/SealUI/tc/commit/7c70661))
+
+
+
+
+
 ## [0.0.6](https://github.com/SealUI/tc/compare/@tccr/cli@0.0.5...@tccr/cli@0.0.6) (2019-09-09)
 
 
