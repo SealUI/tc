@@ -35,13 +35,11 @@ const getCustomConfig = async () => {
 const startPage = async (config, proc) => {
   return new Promise((resolve, reject) => {
     const compiler = webpack(config)
-    compiler.hooks.compilation.tap('compilation', () => {
+
+    compiler.hooks.done.tap('done', () => {
       startApp(baseAppConfig, 'app.js')
+      // utils.logStats(proc, stats)
     })
-    // compiler.hooks.done.tap('done', stats => {
-    //   startApp(baseAppConfig, 'app.js')
-    //   utils.logStats(proc, stats)
-    // })
     compiler.watch({}, (err, stats) => {
       if (err) {
         reject(err)
