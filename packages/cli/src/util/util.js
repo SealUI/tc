@@ -50,7 +50,7 @@ exports.clearConsole = title => {
 }
 
 exports.logStats = (proc, data) => {
-  let log = ''
+  let log = '\n'
   log += chalk.yellow.bold(`┏ ${new Array((19 - proc.length + 1) / 2).join('-')} ${proc} 编译详情 ${new Array((19 - proc.length + 1) / 2).join('-')} ┓`)
   log += '\n'
 
