@@ -1,4 +1,4 @@
-const path = require('path')
+// const path = require('path')
 const webpack = require('webpack')
 const merge = require('webpack-merge')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
@@ -134,11 +134,11 @@ module.exports = {
         test: /\.vue$/,
         loader: ['vue-loader']
       },
-      // {
-      //   test: /\.js$/,
-      //   use: ['babel-loader'],
-      //   exclude: /node_modules/
-      // },
+      {
+        test: /\.js$/,
+        use: ['babel-loader'],
+        exclude: /node_modules/
+      },
       {
         test: /\.(png|jpg|gif|svg)$/,
         loader: 'file-loader',
@@ -180,4 +180,3 @@ module.exports = {
     maxEntrypointSize: 800000
   }
 }
-

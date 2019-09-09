@@ -4,9 +4,6 @@ node_modules
 /scripts
 changelog-generator
 
-/tests/e2e/videos/
-/tests/e2e/screenshots/
-/packages/**/lib/
 CHANGELOG.TEST.md
 CHANGELOG.LERNA.md
 # local env files

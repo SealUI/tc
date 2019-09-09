@@ -32,7 +32,29 @@ const getCustomConfig = async () => {
 }
 
 // 启动开发环境
-const startServe = async (config, proc) => {
+const startPage = async (config, proc) => {
+  return new Promise((resolve, reject) => {
+    const compiler = webpack(config)
+    compiler.hooks.compilation.tap('compilation', () => {
+      startApp(baseAppConfig, 'app.js')
+    })
+    // compiler.hooks.done.tap('done', stats => {
+    //   startApp(baseAppConfig, 'app.js')
+    //   utils.logStats(proc, stats)
+    // })
+    compiler.watch({}, (err, stats) => {
+      if (err) {
+        reject(err)
+      }
+      utils.logStats(proc, stats)
+      resolve({
+        status: 'success'
+      })
+    })
+  })
+}
+
+const startApp = async (config, proc) => {
   return new Promise((resolve, reject) => {
     const compiler = webpack(config)
     compiler.watch({}, (err, stats) => {
@@ -40,16 +62,17 @@ const startServe = async (config, proc) => {
         reject(err)
       }
       utils.logStats(proc, stats)
-      resolve()
+      resolve({
+        status: 'success'
+      })
     })
   })
 }
 
 const serve = async () => {
   const customConfig = await getCustomConfig()
-  await startServe(customConfig, 'page')
-  await startServe(baseAppConfig, 'app.js')
-  return 'success'
+  let { status } = await startPage(customConfig, 'page')
+  return status
 }
 
 module.exports = (...args) => {
