@@ -11,6 +11,14 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 
 
 
+## [0.0.9](https://github.com/SealUI/tc/compare/@tccr/cli@0.0.8...@tccr/cli@0.0.9) (2019-09-19)
+
+**Note:** Version bump only for package @tccr/cli
+
+
+
+
+
 ## [0.0.8](https://github.com/SealUI/tc/compare/@tccr/cli@0.0.7...@tccr/cli@0.0.8) (2019-09-09)
 
 **Note:** Version bump only for package @tccr/cli
