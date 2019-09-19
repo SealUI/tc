@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.0.9](https://github.com/SealUI/tc/compare/@tccr/cli@0.0.8...@tccr/cli@0.0.9) (2019-09-19)
+
+**Note:** Version bump only for package @tccr/cli
+
+
+
+
+
 ## [0.0.9](https://github.com/SealUI/tc/compare/@tccr/cli@0.0.9...@tccr/cli@0.0.9) (2019-09-19)
 
 **Note:** Version bump only for package @tccr/cli
