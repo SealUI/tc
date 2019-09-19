@@ -43,7 +43,7 @@
     "inquirer": "^7.0.0",
     "mini-css-extract-plugin": "^0.8.0",
     "minimist": "^1.2.0",
-    "mp-webpack-plugin": "^0.0.21",
+    "mp-webpack-plugin": "^0.2.0",
     "optimize-css-assets-webpack-plugin": "^5.0.3",
     "ora": "^3.4.0",
     "progress-bar-webpack-plugin": "^1.12.1",

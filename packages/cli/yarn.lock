@@ -3697,10 +3697,10 @@ move-concurrently@^1.0.1:
     rimraf "^2.5.4"
     run-queue "^1.0.3"
 
-mp-webpack-plugin@^0.0.21:
-  version "0.0.21"
-  resolved "https://registry.yarnpkg.com/mp-webpack-plugin/-/mp-webpack-plugin-0.0.21.tgz#167ef6e7178695d051581d371bb58d85a9a7457d"
-  integrity sha512-qXd4qh0BfHGcRHUL68tw4fv7iPd3FAFEbtwZjqoIEE8HD8AlNNLffhcWYzeazVcYW1RpLxyhmmKTA9So8/RNjw==
+mp-webpack-plugin@^0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/mp-webpack-plugin/-/mp-webpack-plugin-0.2.0.tgz#2e70439ef7d46dcb3068474b69299d4751ba5af8"
+  integrity sha512-z7UaXiLIz4w7fBR4O3J6bEa08qjc5n+PlwT1334BG+pVPakiwZbXbZtlSvohL0RBSUyWHvJTH9UlpE9gKAGA+w==
   dependencies:
     path-to-regexp "^3.0.0"
     postcss "^7.0.17"
